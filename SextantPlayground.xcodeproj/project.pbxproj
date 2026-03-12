@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CA464F882F631077006E1528 /* Sextant in Frameworks */ = {isa = PBXBuildFile; productRef = CA464F872F631077006E1528 /* Sextant */; };
+		CA464F8B2F6310AE006E1528 /* Hitch in Frameworks */ = {isa = PBXBuildFile; productRef = CA464F8A2F6310AE006E1528 /* Hitch */; };
+		CA464F8E2F63110B006E1528 /* Chronometer in Frameworks */ = {isa = PBXBuildFile; productRef = CA464F8D2F63110B006E1528 /* Chronometer */; };
+		CA464F912F631133006E1528 /* Spanker in Frameworks */ = {isa = PBXBuildFile; productRef = CA464F902F631133006E1528 /* Spanker */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		CA464F722F630F15006E1528 /* SextantPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SextantPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +30,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA464F882F631077006E1528 /* Sextant in Frameworks */,
+				CA464F8E2F63110B006E1528 /* Chronometer in Frameworks */,
+				CA464F8B2F6310AE006E1528 /* Hitch in Frameworks */,
+				CA464F912F631133006E1528 /* Spanker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +76,10 @@
 			);
 			name = SextantPlayground;
 			packageProductDependencies = (
+				CA464F872F631077006E1528 /* Sextant */,
+				CA464F8A2F6310AE006E1528 /* Hitch */,
+				CA464F8D2F63110B006E1528 /* Chronometer */,
+				CA464F902F631133006E1528 /* Spanker */,
 			);
 			productName = SextantPlayground;
 			productReference = CA464F722F630F15006E1528 /* SextantPlayground.app */;
@@ -94,6 +109,12 @@
 			);
 			mainGroup = CA464F692F630F15006E1528;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CA464F862F631077006E1528 /* XCRemoteSwiftPackageReference "Sextant" */,
+				CA464F892F6310AE006E1528 /* XCRemoteSwiftPackageReference "Hitch" */,
+				CA464F8C2F63110B006E1528 /* XCRemoteSwiftPackageReference "Chronometer" */,
+				CA464F8F2F631133006E1528 /* XCRemoteSwiftPackageReference "Spanker" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CA464F732F630F15006E1528 /* Products */;
 			projectDirPath = "";
@@ -325,6 +346,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA464F862F631077006E1528 /* XCRemoteSwiftPackageReference "Sextant" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KittyMac/Sextant.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.4.38;
+			};
+		};
+		CA464F892F6310AE006E1528 /* XCRemoteSwiftPackageReference "Hitch" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KittyMac/Hitch.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.4.151;
+			};
+		};
+		CA464F8C2F63110B006E1528 /* XCRemoteSwiftPackageReference "Chronometer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KittyMac/Chronometer.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.1.14;
+			};
+		};
+		CA464F8F2F631133006E1528 /* XCRemoteSwiftPackageReference "Spanker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KittyMac/Spanker.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.2.53;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA464F872F631077006E1528 /* Sextant */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA464F862F631077006E1528 /* XCRemoteSwiftPackageReference "Sextant" */;
+			productName = Sextant;
+		};
+		CA464F8A2F6310AE006E1528 /* Hitch */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA464F892F6310AE006E1528 /* XCRemoteSwiftPackageReference "Hitch" */;
+			productName = Hitch;
+		};
+		CA464F8D2F63110B006E1528 /* Chronometer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA464F8C2F63110B006E1528 /* XCRemoteSwiftPackageReference "Chronometer" */;
+			productName = Chronometer;
+		};
+		CA464F902F631133006E1528 /* Spanker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA464F8F2F631133006E1528 /* XCRemoteSwiftPackageReference "Spanker" */;
+			productName = Spanker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA464F6A2F630F15006E1528 /* Project object */;
 }
