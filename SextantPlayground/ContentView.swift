@@ -27,6 +27,11 @@ struct ContentView: View {
                         Spacer()
                     }
                     JSONTextView(text: $textModel.leftText)
+                        .padding(2)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 4)
+                                .stroke(.gray, lineWidth: 1)
+                        }
                 }
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 3))
                 VStack {
@@ -35,6 +40,11 @@ struct ContentView: View {
                         Spacer()
                     }
                     JSONTextView(text: $textModel.rightText, isEditable: false)
+                        .padding(2)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 4)
+                                .stroke(.gray, lineWidth: 1)
+                        }
                 }
                 .padding(EdgeInsets(top: 0, leading: 3, bottom: 0, trailing: 0))
             }

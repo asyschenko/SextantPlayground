@@ -21,11 +21,8 @@ struct JSONTextView: NSViewRepresentable {
         textView.isSelectable = true
         textView.isRichText = false
         textView.font = NSFont.monospacedSystemFont(ofSize: 12, weight: .regular)
-        
-        textView.wantsLayer = true
-        textView.layer?.cornerRadius = 5
-        textView.layer?.borderColor = NSColor.gray.cgColor
-        textView.layer?.borderWidth = 1
+
+        textView.backgroundColor = .clear
 
         textView.isAutomaticQuoteSubstitutionEnabled = false
         textView.isAutomaticDashSubstitutionEnabled = false
